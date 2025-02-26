@@ -18,7 +18,9 @@
     max-width: 1440px;
     margin: 0 auto;
 }  
-
+.header-logo{
+    cursor:pointer;
+}
 .headerpart{
     display:flex;
     justify-content: space-between;
@@ -38,7 +40,12 @@
     list-style: none;
     display:flex;
     gap:48px;
+    cursor: pointer;
 }
+.H-list li:hover{
+    color:#a6c7f3;
+}
+
 .H-list li{
     display:flex;
     align-items: center;
@@ -52,11 +59,20 @@
     border-radius: 36px;
     border: 1px solid  #D0DDF4;
     background-color: #FFF;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    /* transition: box-shadow 0.4s ease; */
 }
+.header-button button:hover{
+    background-color: #a6c7f3;
+    /* box-shadow: 0 0 10px #3498db, 0 0 20px #3498db, 0 0 30px #3498db; */
+}
+
 .navbar{
     display:flex;
     flex-direction: column;
     gap: 8px;
+    cursor: pointer;
     
 }
 .navbar{
@@ -67,6 +83,7 @@
     border-radius:100px;
     background: #FFF;
     width:32px;
+    cursor: pointer;
 }
 .navbar .grey{
     border-bottom: 3px solid #737373;
@@ -101,7 +118,7 @@
     letter-spacing: -0.96px;
 }
 .container1-content p{
-    color: var(--Text-Secondary, #4C4D52);
+    color: #4C4D52;
     font-family: "DM Sans";
     font-size: 20px;
     font-style: normal;
@@ -122,7 +139,13 @@
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+    cursor: pointer;
 }
+
+button:hover{
+    background-color: #274c96;
+}
+
 
 .container1-image img{
     width:90%;
@@ -285,7 +308,12 @@
     font-style: normal;
     font-weight: 400;
     line-height: 30px;
+    cursor: pointer;
 }
+button:hover{
+    background-color: #274c96;
+}
+
 .c3-image{
     display:flex;
     justify-content:center;
@@ -341,6 +369,7 @@
     justify-content: space-between;
     align-items: center;
     align-self: stretch;
+    cursor: pointer;
 }
 .answer{
     display: flex;
@@ -495,6 +524,7 @@
     font-style: normal;
     font-weight: 500;
     line-height: 30px;
+    cursor: pointer;
 }
 
 
@@ -562,6 +592,7 @@
     gap: 4px;
     border-radius: 4px;
     background: #F4F5F6;
+    cursor: pointer;
 }
 .list-headings{
     color: #0E0E0F;
@@ -579,6 +610,11 @@
     gap: 4px;
     max-width: fit-content;
     border-bottom: 1px solid  #4C4D52;
+    cursor: pointer;
+}
+
+.number:hover ,.mail:hover ,.direction:hover{
+    color:#a6c7f3;
 }
 .footer-logo{
     display:flex;
@@ -586,15 +622,21 @@
     align-items: flex-start;
     gap:14px;
 }
+.footer-logo img{
+    cursor:pointer;
+
+}
 .service{
     display: flex;
     flex-direction: column;
     gap:14px;
+    cursor: pointer;
 }
 .service-items{
     display:flex;
     flex-direction: column;
     gap:12px;
+    cursor: pointer;
 }
 .contact-mail{
     display:flex;
